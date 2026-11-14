@@ -72,7 +72,8 @@ h1,h2,.motto,.manifesto-text,.hero-place{text-wrap:balance}
 .hero-inner{position:relative;z-index:1;order:1;text-align:center;padding:calc(64px + 8vh) 22px 0;display:flex;flex-direction:column;align-items:center}
 .hero-seal{width:140px;height:140px;color:var(--gold)}
 .hero-place{font-family:var(--serif);font-style:italic;font-size:1.18rem;margin:18px 0 10px}
-.hero h1{font-size:clamp(2.55rem,6.6vw,5.4rem);line-height:1.02;max-width:17ch;letter-spacing:-.018em}
+.hero h1 span{display:block;text-wrap:balance}
+.hero h1{font-size:clamp(2.55rem,6.6vw,5.4rem);line-height:1.02;max-width:none;letter-spacing:-.018em}
 .hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
 .btn{display:inline-block;font:500 1rem/1 var(--sans);letter-spacing:.02em;text-decoration:none;padding:16px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer}
 .btn-solid{background:var(--hero-ink);color:#F6F1E8}
@@ -290,7 +291,7 @@ footer strong{display:block;color:var(--on-navy);font-family:var(--serif);font-w
     <div class="hero-inner">
       <svg class="hero-seal" aria-hidden="true"><use href="#seal"/></svg>
       <p class="hero-place" data-i18n="heroPlace">Capo d’Orlando, Sicilia</p>
-      <h1 data-i18n="heroTitle">Due case private, a cinque minuti dal mare.</h1>
+      <h1><span data-i18n="heroTitle1">Due case private,</span> <span data-i18n="heroTitle2">a cinque minuti dal mare.</span></h1>
       <div class="hero-cta">
         <a class="btn btn-solid" href="#case" data-i18n="heroCta1"></a>
         <a class="btn btn-line" href="#prenota" data-i18n="heroCta2"></a>
@@ -601,7 +602,7 @@ const T = {
     navBook: "Richiedi",
     heroAlt: "Acquerello di Capo d’Orlando: l’Etna, i Nebrodi, il faro e le Isole Eolie al tramonto",
     heroPlace: "Capo d’Orlando, Sicilia",
-    heroTitle: "Due case private, a cinque minuti dal mare.",
+    heroTitle1: "Due case private,", heroTitle2: "a cinque minuti dal mare.",
     heroCta1: "Scopri le case", heroCta2: "Richiedi disponibilità",
     mottoTr: "Gira e rigira, alla fine si torna sempre qui.",
     manifesto: "Due appartamenti nella stessa casa, appena ristrutturata, con ingressi indipendenti e nessuno spazio in comune. Gira Vota e Furria porta i colori del mare e delle Eolie; Ca Semu quelli della terra e dell’Etna.",
@@ -648,7 +649,7 @@ const T = {
     navBook: "Enquire",
     heroAlt: "Watercolour of Capo d’Orlando: Mount Etna, the Nebrodi hills, the lighthouse and the Aeolian Islands at sunset",
     heroPlace: "Capo d’Orlando, Sicily",
-    heroTitle: "Two private homes, five minutes from the sea.",
+    heroTitle1: "Two private homes,", heroTitle2: "five minutes from the sea.",
     heroCta1: "Discover the homes", heroCta2: "Check availability",
     mottoTr: "Wherever you wander, in the end you always come back here.",
     manifesto: "Two apartments in the same newly renovated house, with independent entrances and no shared spaces. Gira Vota e Furria carries the colours of the sea and the Aeolian Islands; Ca Semu those of the land and of Etna.",
