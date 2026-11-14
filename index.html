@@ -420,7 +420,7 @@ footer strong{display:block;color:var(--on-navy);font-family:var(--serif);font-w
       </ul>
       <p class="addr" data-i18n="whereText"></p>
       <a class="text-link" target="_blank" rel="noopener"
-         href="https://www.google.com/maps/search/?api=1&amp;query=Via%20Consolare%20Antica%20187%2C%20Capo%20d%27Orlando%20ME"
+         href="https://www.google.com/maps/search/?api=1&amp;query=Via%20Consolare%20Antica%20187A%20e%20187B%2C%2098071%20Capo%20d%27Orlando%20ME"
          data-i18n="openMaps"></a>
     </div>
   </section>
@@ -553,7 +553,7 @@ const CONTENT = {
         en: ["Laundry room", "Dedicated room with washing machine, dryer, utility sink, iron and ironing board, broom and vacuum cleaner."] }
     ]}],
     amen: {
-      it: ["Aria condizionata in ogni stanza", "Lavatrice e asciugatrice", "Lavastoviglie", "Macchina del caffè", "Terrazza esclusiva", "Ingresso indipendente", "Zanzariere e tapparelle motorizzate", "Perimetro videosorvegliato", "Parcheggio gratuito in strada", "Animali ammessi"],
+      it: ["Aria condizionata in tutte le stanze", "Lavatrice e asciugatrice", "Lavastoviglie", "Macchina del caffè", "Terrazza esclusiva", "Ingresso indipendente", "Zanzariere e tapparelle motorizzate", "Perimetro videosorvegliato", "Parcheggio gratuito in strada", "Animali ammessi"],
       en: ["Air conditioning in every room", "Washer and dryer", "Dishwasher", "Coffee machine", "Private terrace", "Independent entrance", "Mosquito nets and motorised shutters", "CCTV around the outside", "Free street parking", "Pets welcome"]
     }
   },
@@ -568,8 +568,8 @@ const CONTENT = {
     },
     rooms: [
       { floor: { it: "Piano superiore", en: "Upper floor" }, items: [
-        { it: ["Cucina e zona pranzo", "Cucina completa con piano cottura, forno, cappa, frigorifero, freezer, lavastoviglie e lavatrice. Tavolo da pranzo, divano letto e TV."],
-          en: ["Kitchen and dining area", "Full kitchen with hob, oven, hood, fridge, freezer, dishwasher and washing machine. Dining table, sofa bed and TV."] },
+        { it: ["Cucina e zona pranzo", "Cucina completa con piano cottura, forno, cappa, frigorifero, freezer, lavastoviglie, lavatrice e macchina del caffè. Tavolo da pranzo, divano letto, TV e aria condizionata."],
+          en: ["Kitchen and dining area", "Full kitchen with hob, oven, hood, fridge, freezer, dishwasher, washing machine and coffee machine. Dining table, sofa bed, TV and air conditioning."] },
         { it: ["Camera", "Matrimoniale luminosa con aria condizionata, comodini, lampade da lettura e una cabina armadio spaziosa."],
           en: ["Bedroom", "Bright double room with air conditioning, bedside tables, reading lamps and a roomy walk-in closet."] },
         { it: ["Bagno", "Doccia, mobile lavabo con specchio, WC e bidet."],
@@ -578,8 +578,8 @@ const CONTENT = {
           en: ["Terrace", "Private, in front of the entrance and closed by a gate, with a small table and stools for meals outside and a small sofa."] }
       ]},
       { floor: { it: "Piano inferiore", en: "Lower floor" }, items: [
-        { it: ["Soggiorno", "Ampio, con divani e una grande TV: il posto per stare insieme la sera. Entrambi i divani sono anche divani letto."],
-          en: ["Living room", "Spacious, with sofas and a large TV: the place to get together in the evening. Both sofas are also sofa beds."] },
+        { it: ["Soggiorno", "Ampio, con divani, una grande TV e aria condizionata: il posto per stare insieme la sera. Entrambi i divani sono anche divani letto."],
+          en: ["Living room", "Spacious, with sofas, a large TV and air conditioning: the place to get together in the evening. Both sofas are also sofa beds."] },
         { it: ["Seconda cucina", "Con tavolo da pranzo, frigorifero, lavastoviglie e microonde. Con due cucine separate si può cucinare in contemporanea, con orari e abitudini diversi."],
           en: ["Second kitchen", "With dining table, fridge, dishwasher and microwave. Two separate kitchens mean everyone can cook at the same time, on their own schedule."] },
         { it: ["Camera con bagno privato", "Matrimoniale con aria condizionata, armadio, comodini e lampade da lettura, con bagno privato con WC e lavabo."],
@@ -591,8 +591,8 @@ const CONTENT = {
       ]}
     ],
     amen: {
-      it: ["Due piani indipendenti", "Due cucine complete", "Aria condizionata nelle camere", "Due lavatrici", "Lavastoviglie su entrambi i piani", "Microonde", "Terrazza esclusiva con cancello", "Parcheggio gratuito in strada", "Animali ammessi"],
-      en: ["Two independent floors", "Two full kitchens", "Air conditioning in the bedrooms", "Two washing machines", "Dishwasher on both floors", "Microwave", "Private gated terrace", "Free street parking", "Pets welcome"]
+      it: ["Aria condizionata in tutte le stanze", "Due piani indipendenti", "Due cucine complete", "Macchina del caffè", "Due lavatrici", "Lavastoviglie su entrambi i piani", "Microonde", "Terrazza esclusiva con cancello", "Ingresso indipendente", "Zanzariere e tapparelle motorizzate", "Perimetro videosorvegliato", "Parcheggio gratuito in strada", "Animali ammessi"],
+      en: ["Air conditioning in every room", "Two independent floors", "Two full kitchens", "Coffee machine", "Two washing machines", "Dishwasher on both floors", "Microwave", "Private gated terrace", "Independent entrance", "Mosquito nets and motorised shutters", "CCTV around the outside", "Free street parking", "Pets welcome"]
     }
   }
 };
@@ -618,11 +618,11 @@ const T = {
     infoTitle: "Da sapere",
     checkinVal: "dalle 15:00", checkoutVal: "entro le 11:00",
     linen: "Biancheria", linenVal: "su richiesta, 10 € a persona",
-    tax: "Tassa di soggiorno", taxVal: "2 € a persona",
+    tax: "Tassa di soggiorno", taxVal: "2 € a persona per notte",
     pets: "Animali", petsVal: "benvenuti",
     parking: "Parcheggio", parkingVal: "gratuito in strada",
     payOnSite: "Biancheria e tassa di soggiorno si pagano sul posto.",
-    areaText: "Spiagge libere e attrezzate, bar per colazioni e aperitivi, ristoranti di pesce fresco e locali per la sera. Dal porto partono i collegamenti per le Eolie; il resto della Sicilia più bella è raggiungibile in giornata.",
+    areaText: "Spiagge libere e attrezzate, bar per colazioni e aperitivi, ristoranti di pesce fresco e locali per la sera. Dal porto si parte per le Eolie, e in giornata si raggiungono alcuni dei luoghi più belli della Sicilia.",
     pl1: "Isole Eolie", pl4: "Etna", pl5: "Nebrodi",
     whereText: "Via Consolare Antica 187A e 187B, Capo d’Orlando (ME)",
     openMaps: "Apri in Google Maps",
@@ -665,11 +665,11 @@ const T = {
     infoTitle: "Good to know",
     checkinVal: "from 3:00 pm", checkoutVal: "by 11:00 am",
     linen: "Linen", linenVal: "on request, €10 per person",
-    tax: "Tourist tax", taxVal: "€2 per person",
+    tax: "Tourist tax", taxVal: "€2 per person per night",
     pets: "Pets", petsVal: "welcome",
     parking: "Parking", parkingVal: "free on the street",
     payOnSite: "Linen and tourist tax are paid on site.",
-    areaText: "Free and equipped beaches, cafés for breakfast and aperitivo, fresh seafood restaurants and places to go out at night. Ferries to the Aeolian Islands leave from the port; the rest of Sicily’s finest is within a day trip.",
+    areaText: "Free and equipped beaches, cafés for breakfast and aperitivo, fresh seafood restaurants and places to go out at night. From the port you can reach the Aeolian Islands, and some of Sicily’s most beautiful places are an easy day trip away.",
     pl1: "Aeolian Islands", pl4: "Mount Etna", pl5: "Nebrodi",
     whereText: "Via Consolare Antica 187A and 187B, Capo d’Orlando (ME), Sicily",
     openMaps: "Open in Google Maps",
