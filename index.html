@@ -103,12 +103,17 @@ h1,h2,.motto,.manifesto-text,.hero-place{text-wrap:balance}
 .pc--earth{background:var(--lava);color:var(--on-lava);--frame:rgba(226,170,116,.55);--pos:6% 52%}
 .pc--sea{background:var(--navy);color:var(--on-navy);--frame:rgba(201,164,92,.55);--pos:96% 40%}
 .pc-art{aspect-ratio:16/10;background:var(--pano) var(--pos)/220% auto no-repeat;position:relative}
-.pc-body{position:relative;padding:34px 30px 34px}
-.pc-mark{position:absolute;top:-46px;left:20px;width:92px;height:92px;color:var(--gold-2);transform:rotate(-14deg);opacity:.95}
-.stamp{position:absolute;top:-56px;right:26px;width:74px;padding:5px;background:var(--stamp-paper);border:3px dotted var(--stamp-paper);background-clip:padding-box;box-shadow:0 6px 14px -8px rgba(0,0,0,.6);transform:rotate(3deg)}
+.pc-body{position:relative;padding:30px 28px 32px;display:grid;grid-template-columns:minmax(0,1fr) 196px;gap:26px}
+.pc-post{position:relative;border-left:1px solid var(--frame);min-height:330px}
+.pc-addr{position:absolute;left:18px;right:0;bottom:4px;display:grid;gap:12px;font-family:var(--serif);font-style:italic;font-size:.84rem;line-height:1.3;white-space:nowrap;opacity:.9}
+.pc-addr span{padding-bottom:6px;border-bottom:1px dotted var(--frame)}
+@media (max-width:600px){.pc-body{grid-template-columns:1fr;gap:22px}.pc-post{order:-1;border-left:0;border-bottom:1px solid var(--frame);min-height:178px}.pc-addr{display:none}}
+.pc-mark{position:absolute;top:80px;right:44px;width:150px;height:150px;color:var(--gold-2);transform:rotate(-10deg);z-index:2}
+@media (max-width:600px){.pc-mark{top:8px;left:0;right:auto;width:160px;height:160px}}
+.stamp{position:absolute;top:0;right:0;z-index:1;width:74px;padding:5px;background:var(--stamp-paper);border:3px dotted var(--stamp-paper);background-clip:padding-box;box-shadow:0 6px 14px -8px rgba(0,0,0,.6);transform:rotate(3deg)}
 .stamp i{display:block;height:74px;background:var(--pano) var(--pos)/680% auto no-repeat}
 .stamp b{display:block;text-align:center;font:500 .72rem/1.6 var(--sans);letter-spacing:.08em;color:#14283A}
-.pc h3{font-size:clamp(2.1rem,5vw,2.9rem);margin-top:26px}
+.pc h3{font-size:clamp(2.1rem,4.4vw,2.7rem);margin-top:4px}
 .pc-meaning{font-family:var(--serif);font-style:italic;font-size:1.15rem;margin:6px 0 0;opacity:.85}
 .pc ul{list-style:none;margin:20px 0 0;padding:0;font-weight:300}
 .pc li{padding:7px 0;border-top:1px solid var(--frame)}
@@ -309,23 +314,33 @@ footer strong{display:block;color:var(--on-navy);font-family:var(--serif);font-w
         <a class="pc pc--sea" href="#gira-vota-e-furria">
           <div class="pc-art" aria-hidden="true"></div>
           <div class="pc-body">
-            <svg class="pc-mark" aria-hidden="true"><use href="#seal"/></svg>
-            <span class="stamp" aria-hidden="true"><i></i><b>187A</b></span>
-            <h3>Gira Vota e Furria</h3>
-            <p class="pc-meaning" data-i18n="gvMeaning"></p>
-            <ul><li data-i18n="gvL3"></li><li data-i18n="gvL2"></li><li data-i18n="gvL1"></li><li data-i18n="pcTL"></li></ul>
-            <span class="pc-link" data-i18n="pcSee"></span>
+            <div class="pc-text">
+              <h3>Gira Vota e Furria</h3>
+              <p class="pc-meaning" data-i18n="gvMeaning"></p>
+              <ul><li data-i18n="gvL3"></li><li data-i18n="gvL2"></li><li data-i18n="gvL1"></li><li data-i18n="pcTL"></li></ul>
+              <span class="pc-link" data-i18n="pcSee"></span>
+            </div>
+            <div class="pc-post" aria-hidden="true">
+              <span class="stamp"><i></i><b>187A</b></span>
+              <svg class="pc-mark"><use href="#seal"/></svg>
+              <div class="pc-addr"><span>Via Consolare Antica 187A</span><span>98071 Capo d’Orlando (ME)</span></div>
+            </div>
           </div>
         </a>
         <a class="pc pc--earth" href="#ca-semu">
           <div class="pc-art" aria-hidden="true"></div>
           <div class="pc-body">
-            <svg class="pc-mark" aria-hidden="true"><use href="#seal"/></svg>
-            <span class="stamp" aria-hidden="true"><i></i><b>187B</b></span>
-            <h3>Ca Semu</h3>
-            <p class="pc-meaning" data-i18n="csMeaning"></p>
-            <ul><li data-i18n="csL3"></li><li data-i18n="csL1"></li><li data-i18n="csL2"></li><li data-i18n="pcTL"></li></ul>
-            <span class="pc-link" data-i18n="pcSee"></span>
+            <div class="pc-text">
+              <h3>Ca Semu</h3>
+              <p class="pc-meaning" data-i18n="csMeaning"></p>
+              <ul><li data-i18n="csL3"></li><li data-i18n="csL1"></li><li data-i18n="csL2"></li><li data-i18n="pcTL"></li></ul>
+              <span class="pc-link" data-i18n="pcSee"></span>
+            </div>
+            <div class="pc-post" aria-hidden="true">
+              <span class="stamp"><i></i><b>187B</b></span>
+              <svg class="pc-mark"><use href="#seal"/></svg>
+              <div class="pc-addr"><span>Via Consolare Antica 187B</span><span>98071 Capo d’Orlando (ME)</span></div>
+            </div>
           </div>
         </a>
       </div>
